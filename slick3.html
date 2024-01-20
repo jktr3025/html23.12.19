@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="css/slick.css">
+    <link rel="stylesheet" href="css/slick_style3.css">
+    <script src="script/jquery-3.7.1.js"></script>
+    <script src="script/jquery-ui.js"></script>
+    <script src="script/slick.js"></script>
+    <script lang="java">
+        $(function(){
+            $(".wrap > ul").slick({
+                slidesToShow:3,
+                slidesToScroll:1,
+                centerMode:true,
+            })//wrap > ul").slick
+
+            $(".box_view").slick({
+                slidesToShow:7,
+                slidesToScroll:5,
+                autoplay:true,
+                autoplaySpeed:1000,
+                dots:true,
+                pauseOnHover:true,
+                //  true 이미지에 호버하면 이미지 멈춤false 이미지에 호버하면 이미지 멈추는 것
+                pauseOnDotsHover:true,
+                //true 버튼 호버하면 이미지 멈춤false 버튼에 호버하면 이미지 멈추는 것
+            })//box_view").slick
+        })//jquery
+    </script>
+</head>
+<body>
+    <div class="wrap">
+        <ul>
+            <li class="s_01">
+                <span>01</span>
+                <div class="bg"></div>
+            </li>
+            <li class="s_02">
+                <span>02</span>
+                <div class="bg"></div>
+            </li>
+            <li class="s_03">
+                <span>03</span>
+                <div class="bg"></div>
+            </li>
+            <li class="s_04">
+                <span>04</span>
+                <div class="bg"></div>
+            </li>
+            <li class="s_05">
+                <span>05</span>
+                <div class="bg"></div>
+            </li>
+            <li class="s_06">
+                <span>06</span>
+                <div class="bg"></div>
+            </li>
+            <li class="s_07">
+                <span>07</span>
+                <div class="bg"></div>
+            </li>
+        </ul>
+    </div><!-- wrap -->
+
+    <div class="box">
+        <ul class="box_view">
+            <li><a href="#"><img src="img/normal_01.png" alt=""></a></li>
+            <li><a href="#"><img src="img/normal_02.png" alt=""></a></li>
+            <li><a href="#"><img src="img/normal_03.png" alt=""></a></li>
+            <li><a href="#"><img src="img/normal_04.png" alt=""></a></li>
+            <li><a href="#"><img src="img/normal_05.png" alt=""></a></li>
+            <li><a href="#"><img src="img/normal_06.png" alt=""></a></li>
+            <li><a href="#"><img src="img/normal_07.png" alt=""></a></li>
+            <li><a href="#"><img src="img/normal_08.png" alt=""></a></li>
+            <li><a href="#"><img src="img/normal_09.png" alt=""></a></li>
+            <li><a href="#"><img src="img/normal_10.png" alt=""></a></li>
+            <li><a href="#"><img src="img/normal_11.png" alt=""></a></li>
+            <li><a href="#"><img src="img/normal_12.png" alt=""></a></li>
+            <li><a href="#"><img src="img/normal_13.png" alt=""></a></li>
+            <li><a href="#"><img src="img/normal_14.png" alt=""></a></li>
+        </ul>
+    </div><!-- box -->
+
+
+</body>
+</html>

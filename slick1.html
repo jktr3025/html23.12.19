@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="css/slick.css">
+    <link rel="stylesheet" href="css/slick_style1.css">
+    <script src="script/jquery-3.7.1.js"></script>
+    <script src="script/slick.js"></script>
+    <script lang="java">
+        $(function(){
+            $(".move").slick({
+                autoplay:true,  // 기본값은 false 오토플레이하고 싶으면 true
+                autoplaySpeed:3000,
+                dots:true,
+                arrows:true,      
+                //프리뷰 넥스트 버튼 기본값은 true 안 보이고 싶으면 false
+                swipe:false, 
+                 //기본값 true 마우스로 옆 이미지 넘기기, 마우스로 넘기기 안하고 싶으면 false
+                // slidesToShow:2 ,
+                //보여지는 이미지 갯수
+                // slidesToScroll:2,
+                // 슬라이드 되는 이미지 갯수
+                infinite:true,
+                // 기본이 true, 무제한으로 나오지 않게 하려면 false
+                // vertical:true,
+                //기본은 left로 흐름 , true는 이미지가 위 아래로 흐름
+                fade:true,
+                // 이미지가 슬라이드 될 때 fade 효과있음 , false는 효과 없음
+            });//move slick         //옵션끼리는 사이에 , 넣기
+
+            //이미지가 움질이는 태그가 아닌 그 부모에 slick 걸어줌
+
+            $(".view").slick({
+                autoplay:true,
+                autoplaySpeed:2000,
+                dots:true,
+                arrows:true,
+                fade:true,
+            })//view").slick
+
+
+
+
+
+
+
+
+
+
+
+
+        })//jquery
+    </script>
+</head>
+<body>
+    <div class="slide_img">
+        <ul class="move">
+            <li><a href="#"><img src="img/main_visual05.jpg" alt="main_visual05"></a></li>
+            <li><a href="#"><img src="img/main_visual06.jpg" alt="main_visual06"></a></li>
+            <li><a href="#"><img src="img/main_visual07.jpg" alt="main_visual07"></a></li>
+            <li><a href="#"><img src="img/main_visual08.jpg" alt="main_visual08"></a></li>
+        </ul>
+    </div><!-- slide_img -->
+
+
+    <div class="main_visual">
+        <div class="view">
+            <div><a href="#"><img src="img/hollys01.jpg" alt="hollys"></a></div>
+            <div><a href="#"><img src="img/hollys02.jpg" alt="hollys"></a></div>
+            <div><a href="#"><img src="img/hollys03.jpg" alt="hollys"></a></div>
+            <div><a href="#"><img src="img/hollys04.jpg" alt="hollys"></a></div>
+        </div><!-- view -->
+    </div><!-- main_visual -->
+</body>
+</html>
